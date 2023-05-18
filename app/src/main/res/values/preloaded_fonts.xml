@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/inter_bold</item>
+        <item>@font/inter_extrabold</item>
+        <item>@font/inter_semibold</item>
+        <item>@font/montserrat_medium</item>
+        <item>@font/montserrat_medium_italic</item>
+        <item>@font/montserrat_semibold</item>
+        <item>@font/raleway_bold</item>
+        <item>@font/raleway_medium</item>
+        <item>@font/rubik_bold</item>
+        <item>@font/rubik_medium</item>
+    </array>
+</resources>

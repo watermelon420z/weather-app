@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--КОПИЯ-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloudnew"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/returnarrow_bt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.4"
+        android:src="@drawable/returnarrow"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_card_view"
+        android:layout_width="340dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/borderless"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        card_view:cardBackgroundColor="#80FFFFFF"
+        card_view:cardElevation="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MorningCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#6BFFFFFF"
+            card_view:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/MorningImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/MorningCardTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center"
+                android:text="23°"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/MorningCardText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Утро\nСолнечно"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/DayCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#6BFFFFFF"
+            card_view:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/DayImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/DayCardTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center"
+                android:text="26°"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/DayCardText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="День\nЯсно"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/EveningCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="325dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#6BFFFFFF"
+            card_view:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/EveningImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/EveningCardTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center"
+                android:text="24°"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/EveningCardText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Вечер\nДождь"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/NightCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="20dp"
+            app:cardElevation="0dp"
+            card_view:cardBackgroundColor="#6BFFFFFF"
+            card_view:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/NightImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/NightCardTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/rubik_bold"
+                android:gravity="center"
+                android:text="19°"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/NightCardText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Ночь\nЯсно"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/FullForecastCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="20dp"
+        android:text="Город"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
